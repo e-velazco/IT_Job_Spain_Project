@@ -11,8 +11,8 @@ from joblib import load
 @st.cache_resource
 def load_model():
     ruta_modelos = os.getcwd().replace("Streamlit", "Modelo_predictivo/trained_models")
-    min_model = load(ruta_modelos + '\min_model.pkl')
-    max_model = load(ruta_modelos + '\max_model.pkl')
+    min_model = load(ruta_modelos + '/min_model.pkl')
+    max_model = load(ruta_modelos + '/max_model.pkl')
 
     return min_model, max_model
 ############################################################################################################
