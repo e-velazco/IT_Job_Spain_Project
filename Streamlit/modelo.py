@@ -25,9 +25,9 @@ def modelo():
 
 
     # Rutas de acceso:
-    ruta_listas = os.getcwd().replace("Streamlit", "Modelo_predictivo\listas\listas.json")
-    ruta_encoders = os.getcwd().replace("Streamlit", "Modelo_predictivo\encoders\\")
-    ruta_modelos = os.getcwd().replace("Streamlit", "Modelo_predictivo\\trained_models")
+    ruta_listas = os.getcwd().replace("Streamlit", "Modelo_predictivo/listas/listas.json")
+    ruta_encoders = os.getcwd().replace("Streamlit", "Modelo_predictivo/encoders/")
+    ruta_modelos = os.getcwd().replace("Streamlit", "Modelo_predictivo/trained_models")
 
     # Cargo los datos:
     listas = load_listas(ruta_listas)

@@ -3,6 +3,7 @@
 import streamlit as st
 import pandas as pd
 import os
+import utils as utl
 
 ################ Funciones #################
 from funciones.config import PAGE_CONFIG
@@ -20,7 +21,7 @@ def main():
     # Mostrar el menú en la barra lateral
     st.sidebar.markdown("<h1 style='text-align: center; font-size: 2em;'>Menu</h1>", unsafe_allow_html=True)
 
-    page = st.sidebar.selectbox(label="", options= menu)
+    page = st.sidebar.selectbox(label="sidebar", options= menu)
 
     if page == "Inicio":
 

@@ -16,8 +16,8 @@ def read_data(ruta):
 #################################### Función de carga de modelos ###########################################
 def load_model(ruta):
 
-    min_model = load(ruta + '\min_model.pkl')
-    max_model = load(ruta + '\max_model.pkl')
+    min_model = load(ruta + '/min_model.pkl')
+    max_model = load(ruta + '/max_model.pkl')
 
     return min_model, max_model
 ############################################################################################################
