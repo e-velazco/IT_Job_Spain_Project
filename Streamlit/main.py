@@ -30,6 +30,8 @@ def main():
         "nav-link-selected": {"background-color": "grey"},
     })
 
+
+
     if selected_option == "Inicio":
 
         tech_app()

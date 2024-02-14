@@ -1,6 +1,3 @@
-################ Librerias ################
-
-
 ################ Funciones #################
 
 from funciones.funciones_eda import *
@@ -11,7 +8,7 @@ from funciones.funciones_eda import *
 def tech_app():
 
     ################ DATOS #########################
-    geo_spain,_ ,_ = load_data()
+    geo_spain, _, _, _, _ = load_data()
     ################################################
 
     ################ TITULO ########################
