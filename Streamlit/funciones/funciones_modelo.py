@@ -6,6 +6,8 @@ import pickle
 import json
 from joblib import dump, load
 import sklearn
+import streamlit as st
+
 ############################################################################################################
 #################################### Función de carga de datos #############################################
 def read_data(ruta):
@@ -72,3 +74,7 @@ def data_transformer(X, ruta_encoders, ruta_modelos):
 
     return X_pca_min, X_pca_max
 ############################################################################################################
+
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
