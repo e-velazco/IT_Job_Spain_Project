@@ -63,10 +63,10 @@ def data_transformer(X, ruta_encoders, ruta_modelos):
     X.columns = [str(columna).replace("('", "").replace("',)", "") for columna in X.columns]
 
     # Transformación PCA
-    with open(ruta_modelos + "\\pca_min.pickle", 'rb') as file:
+    with open(ruta_modelos + "/pca_min.pickle", 'rb') as file:
         pca_min = pickle.load(file)
 
-    with open(ruta_modelos + "\\pca_max.pickle", 'rb') as file:
+    with open(ruta_modelos + "/pca_max.pickle", 'rb') as file:
         pca_max = pickle.load(file)
 
     X_pca_min = pca_min.transform(X)
