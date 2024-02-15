@@ -18,7 +18,7 @@ from funciones.funciones_modelo import load_css
 
 ############################################
 st.set_page_config(**PAGE_CONFIG)
-load_css('styles.css')
+#load_css('styles.css')
 
 def main():
 
